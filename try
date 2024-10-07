@@ -1,0 +1,22 @@
+import numpy as np
+
+# Read csv and get the number of columns and rows
+newDf = pd.read_csv("filtered_file.csv")
+array = newDf.values
+noOfCol = newDf.columns.size
+noOfRow = array.size / noOfCol
+
+# print(noOfCol)
+# print(noOfRow)
+# print(newDf.values.size/noOfCol)
+# print(newDf.values)
+for i in range(int(10)):
+    # print(newDf.values[i])
+    for j in range(int(10)):
+        print(i, j + 1)
+        # if(np.array_equal(newDf.values[i], newDf.values[j + 1])):
+        #     print("yes")
+# # Print data inside new csv
+# for i in range(int(3)):
+#     for j in range(int(3)):
+#         print((array[i][j]))
